@@ -1,2 +1,0 @@
-# NEXUS-LAB
-NEXUS LAB

@@ -1,0 +1,38 @@
+import type { SVGProps } from "react";
+
+type IconProps=SVGProps<SVGSVGElement>&{size?:number|string};
+const makeIcon=(paths:string[])=>function NexusIcon({size=18,...props}:IconProps){return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>{paths.map((path,index)=><path d={path} key={index}/>)}</svg>};
+
+export const X=makeIcon(["M6 6l12 12M18 6L6 18"]);
+export const Plus=makeIcon(["M12 5v14M5 12h14"]);
+export const ChevronDown=makeIcon(["M6 9l6 6 6-6"]);
+export const Code2=makeIcon(["M8 8l-4 4 4 4M16 8l4 4-4 4M14 4l-4 16"]);
+export const Braces=makeIcon(["M9 4H7a2 2 0 0 0-2 2v3c0 2-1 3-2 3 1 0 2 1 2 3v3a2 2 0 0 0 2 2h2M15 4h2a2 2 0 0 1 2 2v3c0 2 1 3 2 3-1 0-2 1-2 3v3a2 2 0 0 1-2 2h-2"]);
+export const Download=makeIcon(["M12 3v12M7 10l5 5 5-5M4 20h16"]);
+export const ExternalLink=makeIcon(["M14 5h5v5M19 5l-9 9M18 13v6H5V6h6"]);
+export const FileCode2=makeIcon(["M6 3h8l4 4v14H6zM14 3v5h5M10 12l-2 2 2 2M14 12l2 2-2 2"]);
+export const FolderOpen=makeIcon(["M3 6h7l2 2h9l-3 11H5z"]);
+export const History=makeIcon(["M4 5v5h5M5 9a8 8 0 1 1 2 8M12 7v5l3 2"]);
+export const Import=makeIcon(["M12 16V4M7 9l5-5 5 5M4 20h16"]);
+export const Maximize2=makeIcon(["M9 4H4v5M4 4l6 6M15 20h5v-5M20 20l-6-6"]);
+export const Menu=makeIcon(["M4 7h16M4 12h16M4 17h16"]);
+export const Monitor=makeIcon(["M3 4h18v13H3zM8 21h8M12 17v4"]);
+export const MoreHorizontal=makeIcon(["M5 12h.01M12 12h.01M19 12h.01"]);
+export const PanelBottomClose=makeIcon(["M3 4h18v16H3zM3 15h18M9 18l3-3 3 3"]);
+export const PanelLeftClose=makeIcon(["M3 4h18v16H3zM9 4v16M15 9l-3 3 3 3"]);
+export const Play=makeIcon(["M7 4l13 8-13 8z"]);
+export const RefreshCw=makeIcon(["M20 7v5h-5M4 17v-5h5M6 8a7 7 0 0 1 12-2l2 6M18 16a7 7 0 0 1-12 2l-2-6"]);
+export const RotateCcw=makeIcon(["M4 4v6h6M5 10a8 8 0 1 1 2 8"]);
+export const Save=makeIcon(["M5 3h12l3 3v15H4V3zM8 3v6h8V3M8 21v-7h8v7"]);
+export const Search=makeIcon(["M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15zM16 16l5 5"]);
+export const Settings=makeIcon(["M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6L7 7M17 17l1.4 1.4M18.4 5.6L17 7M7 17l-1.4 1.4"]);
+export const Smartphone=makeIcon(["M7 2h10v20H7zM10 18h4"]);
+export const Tablet=makeIcon(["M5 2h14v20H5zM11 18h2"]);
+export const Trash2=makeIcon(["M4 7h16M9 7V4h6v3M7 7l1 14h8l1-14M10 11v6M14 11v6"]);
+export const WandSparkles=makeIcon(["M4 20L16 8M13 5l3-3 3 3-3 3zM5 4v4M3 6h4M18 15v5M15.5 17.5h5"]);
+export const Zap=makeIcon(["M13 2L4 14h7l-1 8 10-13h-7z"]);
+export const ArrowUpRight=makeIcon(["M7 17L17 7M8 7h9v9"]);
+export const FlaskConical=makeIcon(["M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3M8 14h8"]);
+export const MoveRight=makeIcon(["M4 12h16M15 7l5 5-5 5"]);
+export const Palette=makeIcon(["M12 3a9 9 0 1 0 0 18h2a2 2 0 0 0 0-4h-1a2 2 0 0 1-2-2V3M7 10h.01M9 6h.01M14 6h.01M17 10h.01"]);
+export const Sparkles=makeIcon(["M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5zM19 16l.7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7z"]);
